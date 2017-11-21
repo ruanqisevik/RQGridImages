@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5CDF0F719DAA7A2C38AE5A9C74AEE2D"
+               BlueprintIdentifier = "5CD10840AC1D4A3214D75A4351EFD4F6"
                BuildableName = "Pods_RQGridImagesDemo.framework"
                BlueprintName = "Pods-RQGridImagesDemo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5CDF0F719DAA7A2C38AE5A9C74AEE2D"
+            BlueprintIdentifier = "5CD10840AC1D4A3214D75A4351EFD4F6"
             BuildableName = "Pods_RQGridImagesDemo.framework"
             BlueprintName = "Pods-RQGridImagesDemo"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		76CF34F8462CB018A8C39433 /* Pods_RQGridImagesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE55550C8CD3B6D68FA6070 /* Pods_RQGridImagesDemo.framework */; };
 		AC2A376F1B20F2F0CF1B9C75 /* Pods_RQGridImagesDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2D98D139E481BE584FB1F1 /* Pods_RQGridImagesDemoUITests.framework */; };
-		B00506BA1FB048380099D649 /* RQGridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00506B91FB048380099D649 /* RQGridTableViewCell.swift */; };
 		B08F26681FA1D62300716A2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F26671FA1D62300716A2A /* AppDelegate.swift */; };
 		B08F266A1FA1D62300716A2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F26691FA1D62300716A2A /* ViewController.swift */; };
 		B08F266D1FA1D62300716A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F266B1FA1D62300716A2A /* Main.storyboard */; };
@@ -17,12 +16,11 @@
 		B08F26721FA1D62300716A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F26701FA1D62300716A2A /* LaunchScreen.storyboard */; };
 		B08F267D1FA1D62400716A2A /* RQGridImagesDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F267C1FA1D62400716A2A /* RQGridImagesDemoTests.swift */; };
 		B08F26881FA1D62400716A2A /* RQGridImagesDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F26871FA1D62400716A2A /* RQGridImagesDemoUITests.swift */; };
-		B08F26971FA1D68500716A2A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F26961FA1D68500716A2A /* TableViewController.swift */; };
-		B08F26991FA1D72700716A2A /* RQGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F26981FA1D72700716A2A /* RQGridView.swift */; };
-		B08F269B1FA2E35100716A2A /* RQGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F269A1FA2E35100716A2A /* RQGridCell.swift */; };
 		B08F269D1FA30ADB00716A2A /* RQMana.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F269C1FA30ADB00716A2A /* RQMana.swift */; };
-		B0CC33061FB55B3500B0327E /* FrameStyleInitializeGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC33051FB55B3500B0327E /* FrameStyleInitializeGridViewController.swift */; };
-		B0CC33081FB55B5600B0327E /* AutoLayoutStyleInitializeGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC33071FB55B5600B0327E /* AutoLayoutStyleInitializeGridViewController.swift */; };
+		B09B0B041FC41B2200C5DD84 /* RQGridImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B021FC41B2200C5DD84 /* RQGridImages.swift */; };
+		B09B0B051FC41B2200C5DD84 /* RQGridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B031FC41B2200C5DD84 /* RQGridTableViewCell.swift */; };
+		B09B0B081FC41B6E00C5DD84 /* GridImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B061FC41B6E00C5DD84 /* GridImagesTableViewController.swift */; };
+		B09B0B091FC41B6E00C5DD84 /* GridImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B071FC41B6E00C5DD84 /* GridImagesViewController.swift */; };
 		B21D275B640D37DC6139AB27 /* Pods_RQGridImagesDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE694907034F35962B52969A /* Pods_RQGridImagesDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +48,6 @@
 		6CE55550C8CD3B6D68FA6070 /* Pods_RQGridImagesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RQGridImagesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2D98D139E481BE584FB1F1 /* Pods_RQGridImagesDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RQGridImagesDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF4013CDB580D0572427481 /* Pods-RQGridImagesDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RQGridImagesDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RQGridImagesDemoUITests/Pods-RQGridImagesDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B00506B91FB048380099D649 /* RQGridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RQGridTableViewCell.swift; sourceTree = "<group>"; };
 		B08F26641FA1D62300716A2A /* RQGridImagesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RQGridImagesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F26671FA1D62300716A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B08F26691FA1D62300716A2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,12 +61,11 @@
 		B08F26831FA1D62400716A2A /* RQGridImagesDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RQGridImagesDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F26871FA1D62400716A2A /* RQGridImagesDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RQGridImagesDemoUITests.swift; sourceTree = "<group>"; };
 		B08F26891FA1D62400716A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B08F26961FA1D68500716A2A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		B08F26981FA1D72700716A2A /* RQGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RQGridView.swift; sourceTree = "<group>"; };
-		B08F269A1FA2E35100716A2A /* RQGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RQGridCell.swift; sourceTree = "<group>"; };
 		B08F269C1FA30ADB00716A2A /* RQMana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RQMana.swift; sourceTree = "<group>"; };
-		B0CC33051FB55B3500B0327E /* FrameStyleInitializeGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameStyleInitializeGridViewController.swift; sourceTree = "<group>"; };
-		B0CC33071FB55B5600B0327E /* AutoLayoutStyleInitializeGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutStyleInitializeGridViewController.swift; sourceTree = "<group>"; };
+		B09B0B021FC41B2200C5DD84 /* RQGridImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RQGridImages.swift; sourceTree = "<group>"; };
+		B09B0B031FC41B2200C5DD84 /* RQGridTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RQGridTableViewCell.swift; path = ../../../TestImagePicker_dev/TestImagePicker/RQGridImages/RQGridTableViewCell.swift; sourceTree = "<group>"; };
+		B09B0B061FC41B6E00C5DD84 /* GridImagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridImagesTableViewController.swift; sourceTree = "<group>"; };
+		B09B0B071FC41B6E00C5DD84 /* GridImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridImagesViewController.swift; sourceTree = "<group>"; };
 		DD172431A646D27A2A08C5E4 /* Pods-RQGridImagesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RQGridImagesDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RQGridImagesDemo/Pods-RQGridImagesDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E183E16DFDA1B62A30598B68 /* Pods-RQGridImagesDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RQGridImagesDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RQGridImagesDemoTests/Pods-RQGridImagesDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE694907034F35962B52969A /* Pods_RQGridImagesDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RQGridImagesDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,13 +134,12 @@
 		B08F26661FA1D62300716A2A /* RQGridImagesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B08F269C1FA30ADB00716A2A /* RQMana.swift */,
 				B08F26951FA1D63200716A2A /* RQGridImages */,
 				B08F26671FA1D62300716A2A /* AppDelegate.swift */,
 				B08F26691FA1D62300716A2A /* ViewController.swift */,
-				B0CC33051FB55B3500B0327E /* FrameStyleInitializeGridViewController.swift */,
-				B0CC33071FB55B5600B0327E /* AutoLayoutStyleInitializeGridViewController.swift */,
-				B08F26961FA1D68500716A2A /* TableViewController.swift */,
-				B00506B91FB048380099D649 /* RQGridTableViewCell.swift */,
+				B09B0B061FC41B6E00C5DD84 /* GridImagesTableViewController.swift */,
+				B09B0B071FC41B6E00C5DD84 /* GridImagesViewController.swift */,
 				B08F266B1FA1D62300716A2A /* Main.storyboard */,
 				B08F266E1FA1D62300716A2A /* Assets.xcassets */,
 				B08F26701FA1D62300716A2A /* LaunchScreen.storyboard */,
@@ -174,9 +169,8 @@
 		B08F26951FA1D63200716A2A /* RQGridImages */ = {
 			isa = PBXGroup;
 			children = (
-				B08F26981FA1D72700716A2A /* RQGridView.swift */,
-				B08F269A1FA2E35100716A2A /* RQGridCell.swift */,
-				B08F269C1FA30ADB00716A2A /* RQMana.swift */,
+				B09B0B021FC41B2200C5DD84 /* RQGridImages.swift */,
+				B09B0B031FC41B2200C5DD84 /* RQGridTableViewCell.swift */,
 			);
 			path = RQGridImages;
 			sourceTree = "<group>";
@@ -477,13 +471,11 @@
 			files = (
 				B08F266A1FA1D62300716A2A /* ViewController.swift in Sources */,
 				B08F269D1FA30ADB00716A2A /* RQMana.swift in Sources */,
-				B08F26971FA1D68500716A2A /* TableViewController.swift in Sources */,
-				B00506BA1FB048380099D649 /* RQGridTableViewCell.swift in Sources */,
+				B09B0B041FC41B2200C5DD84 /* RQGridImages.swift in Sources */,
 				B08F26681FA1D62300716A2A /* AppDelegate.swift in Sources */,
-				B08F269B1FA2E35100716A2A /* RQGridCell.swift in Sources */,
-				B08F26991FA1D72700716A2A /* RQGridView.swift in Sources */,
-				B0CC33061FB55B3500B0327E /* FrameStyleInitializeGridViewController.swift in Sources */,
-				B0CC33081FB55B5600B0327E /* AutoLayoutStyleInitializeGridViewController.swift in Sources */,
+				B09B0B051FC41B2200C5DD84 /* RQGridTableViewCell.swift in Sources */,
+				B09B0B091FC41B6E00C5DD84 /* GridImagesViewController.swift in Sources */,
+				B09B0B081FC41B6E00C5DD84 /* GridImagesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

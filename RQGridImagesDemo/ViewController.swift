@@ -1,70 +1,57 @@
 //
 //  ViewController.swift
-//  RQGridImagesDemo
+//  TestImagePicker
 //
-//  Created by 阮琦 on 2017/10/26.
+//  Created by 阮琦 on 2017/11/13.
 //  Copyright © 2017年 Q.Roy. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 
-/// Single Grid View Example
 class ViewController: UIViewController {
-    /// GridView
-    var gridView = RQGridView()
     
-    private var showTableGridButton: UIButton = UIButton.init()
+    var gridImagesEntryBtn: UIButton = UIButton()
+    var gridImagesTableEntryBtn: UIButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.gridView = RQGridView.init(frame: CGRect.init(origin: CGPoint.init(x: 37.5, y: 20), size: CGSize.init(width: 300, height: 100)))
-        self.view.addSubview(self.gridView)
-    
-        self.showTableGridButton.setTitle("jump to table grid", for: .normal)
-        self.showTableGridButton.backgroundColor = UIColor.darkGray
-        self.showTableGridButton.addTarget(self, action: #selector(self.clickToTableGrid), for: .touchUpInside)
-        self.view.addSubview(showTableGridButton)
-
-        self.gridView.images = [
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-            "http://www.baidu.com",
-        ]
+        let btnArr = [gridImagesEntryBtn, gridImagesTableEntryBtn]
+        var index = 0
+        btnArr.forEach { (btn) in
+            index += 1
+            let yForIndex = 80 * index
+            let width = UIScreen.main.bounds.size.width - 40
+            btn.frame = CGRect.init(x: 20, y: yForIndex, width: Int(width), height: 50)
+            btn.backgroundColor = UIColor.groupTableViewBackground
+            btn.setTitleColor(UIColor.black, for: .normal)
+            self.view.addSubview(btn)
+        }
         
-        self.setupGridView()
+        self.gridImagesEntryBtn.setTitle(" 跳转 gridImages View", for: .normal)
+        self.gridImagesEntryBtn.addTarget(self, action: #selector(entryGridImages), for: .touchUpInside)
+        
+        self.gridImagesTableEntryBtn.setTitle(" 跳转 gridImagesTable View", for: .normal)
+        self.gridImagesTableEntryBtn.addTarget(self, action: #selector(entryGridImagesTable), for: .touchUpInside)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    func setupGridView() {
-//        self.gridView.snp.makeConstraints { (make) in
-//            make.top.equalToSuperview()
-//        }
-        self.showTableGridButton.snp.makeConstraints { (make) in
-            make.top.equalTo(self.gridView.snp.bottom)
-            make.left.right.equalToSuperview()
-            make.height.equalTo(50)
-        }
-    }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @objc private func clickToTableGrid() {
-        self.present(TableViewController(), animated: true, completion: nil)
+    
+    @objc func entryGridImages() {
+        let targetVC = GridImagesViewController()
+        self.present(targetVC, animated: true, completion: nil)
     }
-
+    
+    @objc func entryGridImagesTable() {
+        let targetVC = GridImagesTableViewController()
+        self.present(targetVC, animated: true, completion: nil)
+    }
 }
+
+
 
