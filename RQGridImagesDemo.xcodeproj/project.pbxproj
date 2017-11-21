@@ -18,7 +18,7 @@
 		B08F26881FA1D62400716A2A /* RQGridImagesDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F26871FA1D62400716A2A /* RQGridImagesDemoUITests.swift */; };
 		B08F269D1FA30ADB00716A2A /* RQMana.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F269C1FA30ADB00716A2A /* RQMana.swift */; };
 		B09B0B041FC41B2200C5DD84 /* RQGridImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B021FC41B2200C5DD84 /* RQGridImages.swift */; };
-		B09B0B051FC41B2200C5DD84 /* RQGridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B031FC41B2200C5DD84 /* RQGridTableViewCell.swift */; };
+		B09B0B051FC41B2200C5DD84 /* RQDefaultGridImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B031FC41B2200C5DD84 /* RQDefaultGridImagesTableViewCell.swift */; };
 		B09B0B081FC41B6E00C5DD84 /* GridImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B061FC41B6E00C5DD84 /* GridImagesTableViewController.swift */; };
 		B09B0B091FC41B6E00C5DD84 /* GridImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B0B071FC41B6E00C5DD84 /* GridImagesViewController.swift */; };
 		B21D275B640D37DC6139AB27 /* Pods_RQGridImagesDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE694907034F35962B52969A /* Pods_RQGridImagesDemoTests.framework */; };
@@ -63,7 +63,7 @@
 		B08F26891FA1D62400716A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08F269C1FA30ADB00716A2A /* RQMana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RQMana.swift; sourceTree = "<group>"; };
 		B09B0B021FC41B2200C5DD84 /* RQGridImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RQGridImages.swift; sourceTree = "<group>"; };
-		B09B0B031FC41B2200C5DD84 /* RQGridTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RQGridTableViewCell.swift; path = ../../../TestImagePicker_dev/TestImagePicker/RQGridImages/RQGridTableViewCell.swift; sourceTree = "<group>"; };
+		B09B0B031FC41B2200C5DD84 /* RQDefaultGridImagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RQDefaultGridImagesTableViewCell.swift; path = ../../../TestImagePicker_dev/TestImagePicker/RQGridImages/RQDefaultGridImagesTableViewCell.swift; sourceTree = "<group>"; };
 		B09B0B061FC41B6E00C5DD84 /* GridImagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridImagesTableViewController.swift; sourceTree = "<group>"; };
 		B09B0B071FC41B6E00C5DD84 /* GridImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridImagesViewController.swift; sourceTree = "<group>"; };
 		DD172431A646D27A2A08C5E4 /* Pods-RQGridImagesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RQGridImagesDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RQGridImagesDemo/Pods-RQGridImagesDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				B09B0B021FC41B2200C5DD84 /* RQGridImages.swift */,
-				B09B0B031FC41B2200C5DD84 /* RQGridTableViewCell.swift */,
+				B09B0B031FC41B2200C5DD84 /* RQDefaultGridImagesTableViewCell.swift */,
 			);
 			path = RQGridImages;
 			sourceTree = "<group>";
@@ -473,7 +473,7 @@
 				B08F269D1FA30ADB00716A2A /* RQMana.swift in Sources */,
 				B09B0B041FC41B2200C5DD84 /* RQGridImages.swift in Sources */,
 				B08F26681FA1D62300716A2A /* AppDelegate.swift in Sources */,
-				B09B0B051FC41B2200C5DD84 /* RQGridTableViewCell.swift in Sources */,
+				B09B0B051FC41B2200C5DD84 /* RQDefaultGridImagesTableViewCell.swift in Sources */,
 				B09B0B091FC41B6E00C5DD84 /* GridImagesViewController.swift in Sources */,
 				B09B0B081FC41B6E00C5DD84 /* GridImagesTableViewController.swift in Sources */,
 			);

@@ -93,6 +93,11 @@ class RQGridImages: UICollectionView {
         self.init(frame: frame, collectionViewLayout: UICollectionViewLayout())
     }
     
+    /// initialize with flow layout and frame cgrect.zero
+    required convenience init() {
+        self.init(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout())
+    }
+    
     /// initialize with system method
     ///
     /// - Parameters:
@@ -143,7 +148,6 @@ class RQGridImages: UICollectionView {
         if let delegate = self.gridImagesDelegate {
             delegate.gridImages(self, updatedFrame: newFrame)
         }
-        self.reloadData()
     }
     
     
@@ -161,6 +165,7 @@ class RQGridImages: UICollectionView {
             return
         }
         self.updateFrameIfNeeded()
+        self.reloadData()
     }
 }
 
@@ -265,10 +270,10 @@ extension RQGridImages: UICollectionViewDataSource, UICollectionViewDelegate, UI
         }
     }
     
-        func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-            if cell is RQDefaultGridCollectionViewCell {
-                let defaultCell = cell as! RQDefaultGridCollectionViewCell
-                defaultCell.imageView.setImage(withImageResource: self.images[indexPath.row], errorReplaceImage: UIImage(), errorHandler: nil)
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if cell is RQDefaultGridCollectionViewCell {
+            let defaultCell = cell as! RQDefaultGridCollectionViewCell
+            defaultCell.imageView.setImage(withImageResource: self.images[indexPath.row], errorReplaceImage: UIImage(), errorHandler: nil)
             }
         }
 
